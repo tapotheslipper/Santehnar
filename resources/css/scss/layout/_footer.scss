@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/layout-sizes" as ls;
+
+.site-footer {
+    background-color: v.$color-light;
+    color: v.$color-gray;
+    border-top: dashed darken(v.$color-light, 15%);
+
+    padding-top: ls.$spacing-large;
+    padding-bottom: ls.$spacing-large;
+
+    margin-top: 0;
+}
+
+.site-footer--inner {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copy {
+    font-size: v.$font-size-small;
+    margin: 0;
+}
+
+.footer-nav {
+    a {
+        color: v.$color-gray;
+
+        &:hover {
+            color: v.$color-dark;
+        }
+    }
+}

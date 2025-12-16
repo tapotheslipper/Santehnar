@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/layout-sizes" as ls;
+
+
+
+.banner {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 400px;
+    padding: ls.$spacing-xxl 0;
+    text-align: center;
+}
+
+.banner__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    img, source {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: brightness(70%);
+    }
+}
+
+.banner__content {
+    width: 92%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    
+    display: block;
+    background: rgba(v.$color-bg-white, 0.7);
+    border-radius: 42px;
+    
+    .btn {
+        background-color: v.$color-accent;
+        padding: 14px 26px;
+        border-radius: 16px;
+    }
+}

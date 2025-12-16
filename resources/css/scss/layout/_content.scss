@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/layout-sizes" as ls;
+
+.page-content {
+    padding-top: ls.$spacing-large;
+    padding-bottom: ls.$spacing-large;
+
+    section {
+        margin-top: ls.$spacing-xxl;
+    }
+}
+
+.page-header {
+    margin-bottom: ls.$spacing-xl;
+
+    &__title {
+        margin-top: 0;
+        font-size: v.$font-size-base * 3;
+        color: v.$color-dark;
+    }
+
+    &__subtitle {
+        font-size: v.$font-size-base * 1.25;
+        color: v.$color-gray;
+        margin-bottom: ls.$spacing-medium;
+    }
+}
+
+.section-head {
+    margin-bottom: ls.$spacing-large;
+    border-bottom: 2px solid v.$color-light;
+    padding-bottom: ls.$spacing-small;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: v.$color-dark;
+    }
+}
+
+.section-body {
+    padding-top: ls.$spacing-medium;
+}

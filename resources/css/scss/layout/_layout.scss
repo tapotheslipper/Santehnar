@@ -1,0 +1,9 @@
+@use "../abstracts/layout-sizes" as ls;
+
+.container {
+    max-width: ls.$breakpoint-xxl;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: ls.$container-padding;
+    padding-right: ls.$container-padding;
+}

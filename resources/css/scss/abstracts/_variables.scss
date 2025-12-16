@@ -1,0 +1,28 @@
+// PALETTE
+
+$color-primary: #007ACF; // deep blue: for active clickable elements
+$color-accent: #FFC107; // warm yellow: for accentated active clickable elements
+
+$color-true-white: #FFFFFF; // pure white: for cards, UI
+$color-bg-white: #F1F1F1; // off-white: general body background
+$color-light: #E9ECEF; // lightgray: for frames and dividers
+$color-neutral: #F8F9FA; // lightgray: background for sections and blocks
+$color-gray: #6C757D; // gray: for additional, extra text
+$color-dark: #212529; // almost black: main text
+
+$color-success: #28A745; // green: for success messages
+$color-error: #DC3545; // red: for error messages
+$color-info: #17A2B8; // blue: for notifications and information
+
+// TYPOGRAPHY
+
+$font-family-base: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+$font-family-serif: 'Times New Roman', 'serif';
+
+$font-size-base: 1rem; // for regular sized text
+$font-size-large: 1.25rem; // for larger sized text
+$font-size-small: 0.875rem; // for smaller sized text
+
+// EXTRA
+
+$shadow-default: 0 0.125rem 0.25rem rgba($color-dark, 0.075);
