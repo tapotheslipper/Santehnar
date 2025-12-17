@@ -87,8 +87,21 @@
     flex-flow: row;
     gap: ls.$spacing-medium;
 
-    .acc__cart {
+    .acc__link {
         color: v.$color-primary;
         font-weight: bold;
+        height: 40px;
+        display: flex;
+        align-items: center;
+
+        img {
+            display: block;
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    .acc__basket {
+        gap: 10px;
     }
 }

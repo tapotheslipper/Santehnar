@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400"
+   height="400"
+   viewBox="0 0 105.83333 105.83333"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <path
+       id="rect1"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.4839;stroke-dasharray:none"
+       d="m 19.579166,31.749999 h 73.58221 c 1.753504,0 3.320837,1.413998 3.505673,3.157732 2.508153,23.661694 5.016311,40.913336 7.524461,64.113628 0.34512,3.192381 -1.99449,5.781741 -5.209243,5.781741 H 6.8510617 A 5.2583823,5.2583823 47.9062 0 1 1.6197137,99.012193 L 7.3412855,42.805368 A 12.301123,12.301123 137.9062 0 1 19.579166,31.749999 Z" />
+    <path
+       id="rect4"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.65655;stroke-dasharray:none;stroke-opacity:1"
+       d="M 32.603401,4.4703206 23.74557,47.941981 a 4.2333332,4.2333332 50.758493 0 0 4.148097,5.078554 h 0.113893 a 4.2333331,4.2333331 141.93591 0 0 4.109866,-3.218389 L 41.111084,13.38366 a 4.2333331,4.2333331 141.93591 0 1 4.109866,-3.218389 h 13.861913 a 4.2333332,4.2333332 38.065982 0 1 4.109933,3.218661 l 8.99416,36.430861 a 4.2333332,4.2333332 38.065982 0 0 4.109933,3.218661 h 0.113661 a 4.2333332,4.2333332 129.24146 0 0 4.148096,-5.07856 L 71.700179,4.4804427 A 4.2333332,4.2333332 39.250885 0 0 67.553475,1.0923367 L 36.75289,1.0822083 a 4.2333333,4.2333333 140.76791 0 0 -4.149489,3.3881123 z" />
+    <circle
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.38169;stroke-dasharray:none;stroke-opacity:1"
+       id="path1"
+       cx="27.016611"
+       cy="48.183277"
+       r="4.8499455" />
+    <circle
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.38169;stroke-dasharray:none;stroke-opacity:1"
+       id="path1-5"
+       cx="77.287445"
+       cy="48.183277"
+       r="4.8499455" />
+  </g>
+</svg>

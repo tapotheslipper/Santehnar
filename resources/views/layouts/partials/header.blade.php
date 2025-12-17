@@ -24,9 +24,23 @@
         </ul>
     </nav>
     <div class="site-header__actions acc">
-        <a href="{{ url('/account') }}" class="acc__link">Аккаунт</a>
-        <a href="{{ url('/cart') }}" class="acc__link acc__cart">
-            Корзина (0)
+        @guest
+        <a href="{{ route('login') }}" class="acc__link">Войти</a>
+        @endguest
+        @auth
+        <a href="{{ route('profile') }}" class="acc__link" title="{{ Auth::user()->name }}">
+            <picture>
+                <source srcset="{{ asset('images/logo/user-icon.svg') }}" type="image/svg+xml" />
+                <img src="{{ asset('images/logo/user-icon.png') }}" alt="Аккаунт" type="image/png" />
+            </picture>
+        </a>
+        @endauth
+        <a href="{{ url('/basket') }}" class="acc__link acc__basket">
+            <picture>
+                <source srcset="{{ asset('images/logo/basket.svg') }}" type="image/svg+xml" />
+                <img src="{{ asset('images/logo/basket.png') }}" alt="Корзина" type="image/png" />
+            </picture>
+            <span>(0)</span>
         </a>
     </div>
 </div>
