@@ -1,0 +1,54 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/layout-sizes" as ls;
+
+.auth-wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: ls.$spacing-large;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: ls.$spacing-small;
+    }
+
+    &__label {
+        font-weight: 600;
+    }
+
+    &__input {
+        padding: ls.$spacing-medium;
+        border: 1px dashed v.$color-light;
+        border-radius: 4px;
+    }
+
+    &__error {
+        color: v.$color-error;
+        font-size: v.$font-size-small;
+        margin-top: ls.$spacing-xs;
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        gap: ls.$spacing-medium;
+        margin-top: ls.$spacing-medium;
+
+        div:first-child {
+            display: flex;
+            align-items: center;
+            gap: ls.$spacing-small;
+        }
+    }
+
+    &__checkbox {
+        width: 1rem;
+        height: 1rem;
+        cursor: pointer;
+    }
+}
