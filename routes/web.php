@@ -13,7 +13,9 @@ Route::get('/contact', [GeneralController::class, 'contact'])->name('contact');
 Route::post('/contact', [GeneralController::class, 'submitContact'])->name('contact.submit');
 
 // AUTH
-Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
+});
 
 // PRODUCTS
 Route::get('catalog', [CatalogController::class, 'index'])->name('catalog.index');

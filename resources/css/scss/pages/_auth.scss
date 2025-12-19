@@ -1,8 +1,9 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/layout-sizes" as ls;
+@use "sass:color";
 
 .auth-wrapper {
-    max-width: 450px;
+    max-width: 500px;
     margin: 0 auto;
 
     .remember-check {
@@ -17,3 +18,35 @@
     }
 }
 
+.profile {
+    padding: 24px;
+    border: 2px solid color.scale(v.$color-light, $lightness: -10%);
+    border-radius: 36px;
+    box-shadow: v.$shadow-default;
+    
+    &__info {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__row {
+        display: contents;
+    }
+
+    &__label {
+        font-weight: bold;
+        color: v.$color-dark;
+    }
+
+    &__value {
+        color: v.$color-dark;
+        text-align: right;
+    }
+
+    &__actions {
+        border-top: 1px solid v.$color-light;
+        padding-top: ls.$spacing-large;
+    }
+}
