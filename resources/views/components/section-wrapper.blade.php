@@ -1,18 +1,25 @@
 @props([
     'title' => null,
-    'id' => null,
-    'class' => '',
     'headClass' => '',
     'bodyClass' => '',
+    'subTitle' => '',
+    'subLink' => '',
 ])
 
-<section @if($id) id="{{ $id }}" @endif class="{{ $class }}">
+<section {{ $attributes->merge(['class' => '']) }}>
     @if($title)
-    <div class="section-head {{ $headClass }}">
-        <h2 class="section-head__title">{{ $title }}</h2>
-    </div>
+        <div class="section-head {{ $headClass }}">
+            <h2 class="section-head__title">{{ $title }}</h2>
+            
+            @if($subTitle && $subLink)
+                <a href="{{ Route::has($subLink) ? route($subLink) : url($subLink) }}">{{ $subTitle }}</a>
+            @endif
+        </div>
     @endif
-    <div class="section-body {{ $bodyClass }}">
-        {{ $slot }}
-    </div>
+    
+    @if($slot->isNotEmpty())
+        <div class="section-body {{ $bodyClass }}">
+            {{ $slot }}
+        </div>
+    @endif
 </section>

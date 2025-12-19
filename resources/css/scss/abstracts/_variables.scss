@@ -3,7 +3,7 @@
 $color-primary: #007ACF; // deep blue: for active clickable elements
 $color-accent: #FFC107; // warm yellow: for accentated active clickable elements
 
-$color-true-white: #FFFFFF; // pure white: for cards, UI
+$color-true-white: #FFFFFF; // pure white: for header
 $color-bg-white: #F1F1F1; // off-white: general body background
 $color-light: #E9ECEF; // lightgray: for frames and dividers
 $color-neutral: #F8F9FA; // lightgray: background for sections and blocks
@@ -19,9 +19,15 @@ $color-info: #17A2B8; // blue: for notifications and information
 $font-family-base: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
 $font-family-serif: 'Times New Roman', 'serif';
 
-$font-size-base: 1rem; // for regular sized text
-$font-size-large: 1.25rem; // for larger sized text
-$font-size-small: 0.875rem; // for smaller sized text
+$font-size-scaler: 1rem;
+
+$font-size-xs: $font-size-scaler * 0.5; // for tiny text
+$font-size-small: $font-size-scaler * 0.875; // for smaller sized text
+$font-size-medium: $font-size-scaler * 1; // basic text size
+$font-size-large: $font-size-scaler * 1.25; // for larger sized text
+$font-size-xl: $font-size-scaler * 1.5; // for xl sized text
+$font-size-xxl: $font-size-scaler * 2; // for xxl sized text
+$font-size-xxxl: $font-size-scaler * 2.5; // for xxxl sized text;
 
 // EXTRA
 

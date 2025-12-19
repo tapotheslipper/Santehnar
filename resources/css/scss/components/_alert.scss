@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/layout-sizes" as ls;
+
+.alert {
+    display: block;
+    font-weight: 600;
+    font-size: v.$font-size-small;
+    margin-top: ls.$spacing-xs;
+    padding: 12px 24px;
+    border-radius: 18px;
+
+    color: v.$color-neutral;
+
+    &--success {
+        background-color: v.$color-success;
+    }
+
+    &--error {
+        background-color: v.$color-error;
+    }
+}

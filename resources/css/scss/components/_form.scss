@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/layout-sizes" as ls;
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: ls.$spacing-large;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: ls.$spacing-small;
+    }
+
+    &__label {
+        font-weight: 600;
+    }
+
+    &__input, &__textarea {
+        padding: ls.$spacing-medium;
+    }
+
+    &__textarea {
+        resize: vertical;
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: ls.$spacing-medium;
+        
+        margin-top: ls.$spacing-medium;
+    }
+}

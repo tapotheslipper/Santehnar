@@ -34,7 +34,7 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
         Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
         Fortify::redirectUserForTwoFactorAuthenticationUsing(RedirectIfTwoFactorAuthenticatable::class);
-        
+
         // CUSTOM
         Fortify::loginView(function () {
             return view('auth.login');
@@ -45,8 +45,8 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::requestPasswordResetLinkView(function () {
             return view('auth.forgot-password');
         });
-        Fortify::resetPasswordView(function (array $data) {
-            return view('auth.reset-password', ['request' => $data]);
+        Fortify::resetPasswordView(function (Request $request) {
+            return view('auth.reset-password', ['request' => $request]);
         });
 
         RateLimiter::for('login', function (Request $request) {

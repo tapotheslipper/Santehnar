@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class GeneralController extends Controller
@@ -20,9 +21,17 @@ class GeneralController extends Controller
     {
         return view('general.contact');
     }
-    public function submitContact()
+
+    public function submitContact(Request $request)
     {
-        return redirect()->route('contact')->with('success', 'Сообщение успешно отправлено.');
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'text' => 'required|string|min:10',
+        ]);
+        Contact::create($validated);
+        
+        return redirect()->route('contact')->with('success', 'Ваше сообщение успешно отправлено.');
     }
 
     public function error()

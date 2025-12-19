@@ -9,8 +9,6 @@
 
     padding-top: ls.$spacing-large;
     padding-bottom: ls.$spacing-large;
-
-    margin-top: 0;
 }
 
 .site-footer--inner {
@@ -26,11 +24,20 @@
 }
 
 .footer-nav {
-    a {
-        color: v.$color-gray;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
 
-        &:hover {
-            color: v.$color-dark;
+    ul {
+        list-style: none;
+        font-size: v.$font-size-small;
+        
+        a {
+            color: v.$color-gray;
+    
+            &:hover {
+                color: v.$color-dark;
+            }
         }
     }
 }

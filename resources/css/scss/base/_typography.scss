@@ -4,26 +4,25 @@
 
 h1, h2, h3, h4, h5, h6 {
     color: v.$color-dark;
-    margin-top: ls.$spacing-large;
-    margin-bottom: ls.$spacing-medium;
     line-height: 1.2;
+    margin: 0;
 }
 
 h1 {
-    font-size: v.$font-size-base * 2.5;
+    font-size: v.$font-size-xxxl;
 }
 h2 {
-    font-size: v.$font-size-base * 2;
+    font-size: v.$font-size-xxl;
 }
 h3 {
-    font-size: v.$font-size-base * 1.5;
+    font-size: v.$font-size-xl;
 }
 h4 {
-    font-size: v.$font-size-base * 1.25;
+    font-size: v.$font-size-large;
 }
 
 p {
-    margin-bottom: ls.$spacing-medium;
+    margin: 0;
 }
 
 a {
@@ -33,6 +32,9 @@ a {
 
     &:hover {
         color: color.scale(v.$color-primary, $lightness: -10%);
-        text-decoration: underline;
     }
+}
+
+ul {
+    margin: 0;
 }

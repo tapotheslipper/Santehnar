@@ -4,7 +4,7 @@
             <div class="logo__wrapper">
                 <picture class="logo__image">
                     <source srcset="{{ asset('images/logo/favicon.svg') }}" type="image/svg+xml" />
-                    <img src="{{ asset('images/logo/favicon.png') }}" alt="Логотип" />
+                    <img src="{{ asset('images/logo/favicon.png') }}" alt="Логотип" fetchpriority="high" />
                 </picture>
                 <span class="logo__text">Сантехнарь</span>
             </div>

@@ -1,7 +1,7 @@
 @use "../abstracts/layout-sizes" as ls;
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.contact-credits {
+    display: flex;
+    flex-direction: column;
     gap: ls.$spacing-xl;
 }

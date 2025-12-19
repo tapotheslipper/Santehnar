@@ -2,8 +2,16 @@
 
 .btn {
     cursor: pointer;
-    background-color: v.$color-primary;
-    color: v.$color-light;
     padding: 14px 26px;
     border-radius: 16px;
+
+    &--primary {
+        background-color: v.$color-primary;
+        color: v.$color-light;
+    }
+
+    &--accent {
+        background-color: v.$color-accent;
+        color: v.$color-dark;
+    }
 }

@@ -11,31 +11,22 @@
 }
 
 .page-header {
-    margin-bottom: ls.$spacing-xl;
-
     &__title {
-        margin-top: 0;
-        font-size: v.$font-size-base * 3;
-        color: v.$color-dark;
+        margin-bottom: ls.$spacing-medium;
     }
 
     &__subtitle {
-        font-size: v.$font-size-base * 1.25;
+        font-size: v.$font-size-large;
         color: v.$color-gray;
-        margin-bottom: ls.$spacing-medium;
     }
 }
 
 .section-head {
-    margin-bottom: ls.$spacing-large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     border-bottom: 2px solid v.$color-light;
     padding-bottom: ls.$spacing-small;
-
-    &__title {
-        margin-top: 0;
-        margin-bottom: 0;
-        color: v.$color-dark;
-    }
 }
 
 .section-body {
